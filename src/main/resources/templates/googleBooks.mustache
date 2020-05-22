@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div>
+    <a href="/library">Add books</a>
+    <a href="/search">Search book</a>
+    <a href="#" class="disabled">Search books online</a>
+</div>
+<br>
+<div>Search books by keyword</div>
+<form method="post" action="onlinebooks">
+    <span>Keyword: <input type="text" name="keyword" placeholder="Programming"></input></span>
+    <button type="submit">Search book</button>
+</form>
+
+<div>Books:</div>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Author</th>
+        <th>Link</th>
+    </tr>
+{{#books}}
+    <tr>
+        <td>{{titlu}}</td>
+        <td>{{gen}}</td>
+        <td>{{autor}}</td>
+        <td><a href="{{readLink}}" target="_blank">Read online</a></td>
+    </tr>
+{{/books}}
+</table>
+</body>
+</html>
