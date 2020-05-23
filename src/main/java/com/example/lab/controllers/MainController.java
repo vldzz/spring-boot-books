@@ -1,6 +1,6 @@
 package com.example.lab.controllers;
 
-import com.example.lab.controllers.repos.BookRepo;
+import com.example.lab.repos.BookRepo;
 import com.example.lab.domain.Book;
 import com.example.lab.google.api.OnlineBooks;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.example.lab.controllers.repos;
+package com.example.lab.repos;
 
 import com.example.lab.domain.Book;
 import org.springframework.data.repository.CrudRepository;
